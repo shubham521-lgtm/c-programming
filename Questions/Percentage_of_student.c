@@ -1,5 +1,6 @@
-// vMedium — 10 Questions
-// Write a program to input marks of 5 subjects and calculate the total marks.
+// Extend Question 11
+//  to calculate the percentage of the student.
+
 #include<stdio.h>
 int main(){
     int physics;
@@ -21,11 +22,13 @@ int main(){
     printf("enter marks of English\n");
     scanf("%d",&English);
 
-    printf("Total marks\n");
+    printf("Total marks =  ");
 
     int sum = (physics+chemistry+maths+hindi+English);
-    printf("%d",sum);
+    float percentage = sum / 5.0;
 
+    printf("Total marks = %d\n", sum);
+    printf("Percentage = %.2f%%\n", percentage);
     return 0 ;
 
 }
