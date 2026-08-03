@@ -1,15 +1,20 @@
-// fibonachi series
+// factorial
 #include<stdio.h>
 
-int fibonachi(){
-    int a = 0;
-    int b = 1;
-  a=b;
-  c = a +b;
-  b=c;
+int factorial(int n){
 
+  if(n==1,n==0){
+    return 1;
+  }
+
+  return n*factorial(n-1);
 }
+
 int main(){
-
-
+int n ;
+printf("Enter a number\n");
+scanf("%d",&n);
+int fact = factorial(n);
+printf("%d",fact);
+return 0;
 }
